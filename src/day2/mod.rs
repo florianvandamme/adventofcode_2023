@@ -64,15 +64,15 @@ pub fn get_game_cube_power(game: &Game) -> i32 {
     };
 
     for reveal in &game.cube_reveals {
-        if (reveal.red > highest_reveal.red) {
+        if reveal.red > highest_reveal.red {
             highest_reveal.red = reveal.red;
         }
 
-        if (reveal.green > highest_reveal.green) {
+        if reveal.green > highest_reveal.green {
             highest_reveal.green = reveal.green;
         }
 
-        if (reveal.blue > highest_reveal.blue) {
+        if reveal.blue > highest_reveal.blue {
             highest_reveal.blue = reveal.blue;
         }
     }
