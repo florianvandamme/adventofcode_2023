@@ -2,7 +2,7 @@ use std::collections::{HashMap, HashSet};
 use std::fs;
 
 #[derive(Debug)]
-struct Card {
+pub struct Card {
     id: i32,
     winning_numbers: HashSet<i32>,
     card_numbers: HashSet<i32>,
@@ -43,7 +43,7 @@ pub fn solve_part_2() {
         let matching_numbers = matching_numbers(&parsed_card);
         let card_copies = card_map.get(&parsed_card.id).unwrap().to_owned();
 
-        for x in 1..matching_numbers+1 {
+        for x in 1..matching_numbers + 1 {
             let increment = x as i32;
             let card_id = &parsed_card.id + increment;
 
@@ -54,7 +54,7 @@ pub fn solve_part_2() {
         }
     }
 
-    let total_sum = card_map.values().sum();
+    let total_sum: i32 = card_map.values().sum();
 
     println!("The sum of x is: {}", total_sum);
 }
