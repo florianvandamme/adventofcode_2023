@@ -58,7 +58,6 @@ pub struct SeedMapMap {
 // }
 
 pub fn solve_part_2() {
-    let start = SystemTime::now().duration_since(UNIX_EPOCH).unwrap();
     let input = fs::read_to_string("src/day5/input.txt").unwrap();
     let mut maps = input.split("\n\n");
 
@@ -72,6 +71,7 @@ pub fn solve_part_2() {
 
     let lowest_range = (0, 100000000000);
 
+    let start = SystemTime::now().duration_since(UNIX_EPOCH).unwrap();
     for location in lowest_range.0..lowest_range.0 + lowest_range.1 + 1 {
         let mut value: i128 = location;
 

@@ -2,3 +2,5 @@
 /.idea
 **/*/briefing.txt
 **/*/input.txt
+**/*/briefing_manually_padded.txt
+**/*/padded_input.txt
