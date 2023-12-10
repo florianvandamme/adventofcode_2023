@@ -2,7 +2,9 @@
 // mod day2;
 // mod day3;
 // mod day4;
-mod day5;
+// mod day5;
+// mod day6;
+mod day7;
 
 fn main() {
     // use day1::solve_part_1 as solve_day_1_part_1;
@@ -14,7 +16,11 @@ fn main() {
     // use day4::solve_part_1 as solve_day_4_part_1;
     // use day4::solve_part_2 as solve_day_4_part_2;
     // use day5::solve_part_1 as solve_day_5_part_1;
-    use day5::solve_part_2 as solve_day_5_part_2;
+    // use day5::solve_part_2 as solve_day_5_part_2;
+    // use day6::solve_part_1 as solve_day_6_part_1;
+    // use day6::solve_part_2 as solve_day_6_part_2;
+    // use day7::solve_part_1 as solve_day_7_part_1;
+    use day7::solve_part_2 as solve_day_7_part_2;
 
     // solve_day_1_part_1();
     // solve_day_1_part_2();
@@ -25,5 +31,9 @@ fn main() {
     // solve_day_4_part_1();
     // solve_day_4_part_2();
     // solve_day_5_part_1();
-    solve_day_5_part_2();
+    // solve_day_5_part_2();
+    // solve_day_6_part_1();
+    // solve_day_6_part_2();
+    // solve_day_7_part_1();
+    solve_day_7_part_2();
 }
